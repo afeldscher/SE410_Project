@@ -47,3 +47,4 @@ This interface is only partially functional, since there is no backend to connec
 #### Frameworks
 To build out our interface we used the following frameworks:
 * Bootstrap v4.4.1
+* jQuery-3.2.1
