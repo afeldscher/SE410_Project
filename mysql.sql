@@ -108,7 +108,8 @@ DROP TABLE IF EXISTS moduleauthors;
 CREATE TABLE moduleauthors (
 	  ModuleID int(11) NOT NULL,
 	  AuthorName varchar(50) NOT NULL,
-	  FOREIGN KEY (ModuleID) REFERENCES module (ModuleID)
+	  FOREIGN KEY (ModuleID) REFERENCES module (ModuleID),
+    OrderID INT
 ) ENGINE=INNODB;
 
 -- Hierarchymodule
@@ -248,6 +249,7 @@ CREATE TABLE modulematerialslink (
   ModuleID int(10) NOT NULL,
   MaterialID int(10) NOT NULL,
   OrderID int(10) NOT NULL,
+  MaterialLink varchar(200) NOT NULL,
   PRIMARY KEY (ModuleID,MaterialID),
   FOREIGN KEY (MaterialID) REFERENCES materials (MaterialID) ON DELETE CASCADE,
   FOREIGN KEY (ModuleID) REFERENCES module (ModuleID) ON DELETE CASCADE
