@@ -1,0 +1,180 @@
+
+From the docs:
+	The main database (Microsoft SQL) is broken down into three categorized databases – AspNetForums, swenet, and UserAccounts.  The swenet database contains all of the module information, UserAccounts contains user information, and AspNetForums contains all forum information, as would be expected.
+
+
+Description:
+	Our first attempt to view the SWENET database was to try to restore the database backup. This led to issues because we needed to have access to a SQL server instance in order to restore the backup. We installed several versions of SQL Server, but could not get the backup to load. We expect this is a SQL Server 2000 backup, but we could not get SQL server 2000 to run on any of our windows 10 machines. We next tried to connect to the existing database connection strings, however the outside connection was blocked. After that we explored the DBAdaptor section of the code. These files contained DB queries that reveled the structure of the schema. This is unfortunately missing datatype and relationship information but that can be filled in at a later date if access to the running database can be given.  
+
+
+db: AspNetForums
+	Not able to find any information about the schema here. From what we understand this is a database that is autopopualted by ASP.NET Forms.
+
+db: swenet
+	Author
+		ModuleID, 
+		UserName, 
+		OrderID
+		
+	SEEKCategories
+		ModuleID, 
+		CategoryID
+
+	SEEKLookups
+		CategoryID, 
+		Abbrev, 
+		Text, 
+		ForumID
+
+	Emails
+		EmailID, 
+		Subject, 
+		Message
+	
+	FacultyRequests
+		UserName, 
+		Date, 
+		Name, 
+		Affiliation, 
+		Proof
+	
+	MaterialComments
+		MaterialID, 
+		Comments, 
+		Subject, 
+		Date, 
+		Rating, 
+		RatingImage, 
+		Author
+	
+	Materials
+		MaterialID, 
+		IdentifyingInfo, 
+		LinkToMaterial,
+		InitialModuleID, 
+		RatingImage, 
+		Rating, 
+		AccessFlag
+	
+	ModuleMaterialsLink
+		MaterialID, 
+		IdentifyingInfo, 
+		LinkToMaterial
+	
+	ModuleCheckouts
+		UserName
+		Module ID
+	
+	ModulesDetailView
+		ModuleID
+		Title
+		Date
+		Abstract
+		LectureSize
+		LabSize
+		ExerciseSize
+		HomeworkSize
+		OtherSize
+		AuthorComments
+		Status
+		Submitter
+		Version
+		BaseID
+		LockedBy
+		CheckInComments
+
+
+	ModuleGroups
+		BaseID
+		GroupID
+
+	ModuleRatings
+		ModuleID, 
+		Rating, 
+		NumRatings, 
+		ThreadID
+	
+	PopupHelp
+		Id
+		Title
+		Text
+	
+	Module
+		Status
+		ModuleID
+
+	ModuleBases
+		ModuleIdentifier
+		BaseID
+
+	Objectives
+		ModuleID, 
+		BloomLevel, 
+		ObjectiveText, 
+		OrderID
+	
+	Prereqs
+		ModuleID, 
+		PrerequisiteText, 
+		OrderID 
+		
+	Topics
+		ModuleID, 
+		TopicText, 
+		OrderID
+		
+	OtherResources
+		ModuleID, 
+		ResourceDescriptiveText, 
+		ResourceLink, 
+		OrderID
+	
+	SeeAlso
+		ModuleID, 
+		Description, 
+		AltModuleIdentifier, 
+		OrderID
+	
+	
+db: UserAccounts 
+	SubmitterRequests
+		UserName,
+		Date,
+		Message,
+		SubmitterId
+	
+	UserInfo
+		UserName, 
+		Name, 
+		Email, 
+		Title, 
+		Affiliation, 
+		Street1,
+		Street2, 
+		City, 
+		State, 
+		Zip, 
+		Country, 
+		PhoneCountry, 
+		Phone,
+		PhoneExtension, 
+		FaxCountry, 
+		Fax, 
+		Webpage, 
+		QuestionID, 
+		QuestionAnswer,
+		SubmitterID,
+		LastModuleID
+
+	Users
+		UserName
+		Role
+
+	Questions
+		QuestionID, 
+		QuestionText
+	
+
+	
+	
+	
