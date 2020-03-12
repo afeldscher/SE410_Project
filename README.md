@@ -31,7 +31,7 @@ We implemented 2 targets, the database and the user interface.
 ### Target 1: Database
 Our database is implemented as a MySQL database. 
 
-We placed our target system schema in this repository in [mysql.sql](mysql.sql). 
+We placed our target system schema in this repository in [mysql.sql](mysql.sql). This script can successfully be used to create the database.  
 
 The following diagram reflects the schema described in the file:
 
