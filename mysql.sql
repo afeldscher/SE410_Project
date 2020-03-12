@@ -270,10 +270,6 @@ CREATE TABLE emails (
   PRIMARY KEY (EmailID)
 ) ENGINE=INNODB;
 
-
-
--- TODO: Do we need parentchild or composition ????
-
 -- parentchild
 DROP TABLE IF EXISTS parentchild;
 CREATE TABLE parentchild (
@@ -298,8 +294,6 @@ CREATE TABLE composition (
 -- Add Default Values
 -- ----------------
 INSERT INTO type (Name) VALUES ('Assessment Material'),('Answer Key'),('Portfolio'),('Rubric'),('Test'),('Dataset'),('Event'),('Instructional Material'),('Activity'),('Annotation'),('Case Study'),('Course'),('Curriculum'),('Demonstration'),('Experiment/Lab Activity'),('Field Trip'),('Game'),('Instructional Strategy'),('Instructor Guide/Manual'),('Interactive Simulation'),('Lecture/Presentation'),('Lesson/Lesson Plan'),('Model'),('Problem Set'),('Project'),('Simulation'),('Student Guide'),('Syllabus'),('Textbook'),('Tutorial'),('Unit of Instruction'),('Reference Material'),('Community'),('Tool'),('Audio/Visual');
-
-
 
 -- ----------------
 -- Add Sample Data
