@@ -2,7 +2,6 @@
 <head> 
     <meta charset="UTF-8">
     <!-- Including Bootstrap CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Include Bootstrap & JQuery JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -10,30 +9,79 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <style>
-    .header {
-  padding: 60px;
+  .header {
+  padding: 0px;
   text-align: center;
   background: #00FFFF;
   color: white;
-  font-size: 40px;
-}
+  font-size: 30px;
+  }
+
+  .loggedin {
+    display: true;
+    visibility: visible;
+  }
+  
+  .loggedout {
+    display: false;
+    visibility: hidden;
+  }
+
+  .edcyan {
+    padding-left: 10px;
+    font-size: 40px;
+  }
+  .searchbar {
+    padding-top: 20px;
+  }
 </style>
 <!-- Navbar -->
 <div class= "header"></div>
-<div class="w3-top">
-        <h1>EDCYAN</h1>
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
-      <a href="#account" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Account</a>
-      <a href="#admin" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Admin</a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Modules">Modules <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">MyModules</a>
-          <a href="#" class="w3-bar-item w3-button">Browse Modules</a>
+<nav class="navbar navbar-expand-lg navbar-light header">
+  <a class="navbar-brand edcyan" href="#">EdCyan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Admin</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Modules
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#BrowseAll">Browse All</a>
+          <a class="dropdown-item" href="#MyModules">My Modules</a>
+          <a class="dropdown-item" href="#CreateModule">Create Module</a>
         </div>
-      </div>
-    </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <form class="form-inline searchbar">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link account" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src=".\assets\img\person.svg" alt="" width="60" height="60">
+        </a>
+        
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#ManageAccount">Manage Account</a>
+          <a class="dropdown-item loggedin" href="#CreateModule">Logout</a>
+        </div>
+      </li>
+    </ul>
   </div>
+</nav>
 </html>
