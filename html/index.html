@@ -70,8 +70,8 @@
           Admin
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarAdminLink">
-          <a class="dropdown-item" href="#EditHome">Edit Home</a>
-          <a class="dropdown-item" href="#EditAbout">Edit About</a>
+          <a class="dropdown-item" href="#EditHome" onClick="showPage('EditHome')">Edit Home</a>
+          <a class="dropdown-item" href="#EditAbout" onClick="showPage('EditAbout')">Edit About</a>
           <a class="dropdown-item" href="#ManageUsers" onClick="showPage('UserManagement')">Manage Users</a>
           <a class="dropdown-item" href="#ManageModules" onClick="showPage('ModuleManagement')">Manage Modules</a>
         </div>
@@ -177,6 +177,16 @@
         </tr>
       </tbody>
     </table>
+  </div>
+  <div class="page d-none" id="EditHome">
+    <h1 style="text-align: center;">
+    Edit Home
+    </h1>
+  </div>
+  <div class="page d-none" id="EditAbout">
+    <h1 style="text-align: center;">
+    Edit About
+    </h1>
   </div>
   <div class="page d-none" id="UserManagement">
     <h1 style="text-align: center;">
@@ -569,14 +579,14 @@
                             <tr>
                                 <td width="48%">
                                     <h2 text-align="center">Chris Van</h2>
-                                    <p text-align="center"><img height="130"
-                                                src=".\assets\img\van.jpeg" width="130"></p>
+                                    <p text-align="center"><img height="200"
+                                                src=".\assets\img\van.jpeg" width="150"></p>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="48%">
                                     <h2 text-align="center">Kevin Wen</h2>
-                                    <p text-align="center"><img height="200"
+                                    <p text-align="center"><img height="180"
                                                 src=".\assets\img\wen.jpeg" width="130"></p>
                                 </td>
                             </tr>
@@ -590,8 +600,8 @@
                             <tr>
                               <td width="48%">
                                   <h2 text-align="center">Richard Yoon</h2>
-                                  <p text-align="center"><img height="130"
-                                              src=".\assets\img\yoons.jpeg" width="130"></p>
+                                  <p text-align="center"><img height="180"
+                                              src=".\assets\img\yoon.jpeg" width="130"></p>
                               </td>
                           </tr>
                         </tbody>
