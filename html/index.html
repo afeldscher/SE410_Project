@@ -45,12 +45,16 @@
     width: 100%;
   }
 
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: white;
-    color: black;
-  }
+  .button {
+  background-color: #EF476F;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  margin: auto;
+  cursor: pointer;
+}
 </style>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light header">
@@ -182,11 +186,138 @@
     <h1 style="text-align: center;">
     Edit Home
     </h1>
+    <br>
+    <h2>
+    <button class="button" style="text-align: center;">Edit Home Page</button>
+    </h2>
+    <br>
+    <h3 style="text-align: center;">
+      Welcome to EdCyan: Navigate the webpage by using the tabs in the navigation bar!
+    </h3>
+    <br>
+    <h5>
+      Below are your most recent modules:
+    </h5>
+
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Date Created</th>
+          <th scope="col">Status</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">46</td>
+          <td>
+            <a href="./samplemodule1">Application Controls and Audit</a>
+          </td>
+          <td>2012-11-10 18:19:58</td>
+          <td>Active</td>
+          <td>
+            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+          </td>
+          <td>
+            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="page d-none" id="EditAbout">
     <h1 style="text-align: center;">
     Edit About
     </h1>
+    <br>
+    <h2>
+    <button class="button" style="text-align: center;">Edit Home Page</button>
+    </h2>
+    <br>
+    <table id="Table1" width="750" cellspacing="1" cellpadding="1" style="color:#2E4057">
+    <tbody>
+        <tr>
+            <td width="150" valign="top">
+            </td>
+            <td width="600">
+                <h1>The Network Community for Software Engineering Education</h1>
+                <p>
+                    <strong>EdCyan - </strong> Software Engineering is taught at universities all across the world.
+                    Organizations such as ABET, Software Engineering Body of Knowledge
+                    (SWEBOK), and IEEE impose standards that help to govern software
+                    engineering curriculum; with the goal being to advance the field as a whole
+                    and improve education globally.
+                  </p>
+                  <p>
+                    One of the most important parts of education
+                    are the course materials. These can be anything from assignments, to in
+                    class exercises that are designed to improve student learning and
+                    understanding. Rather than hoarding materials and keeping them secret, a
+                    number of universities have elected to share some of their resources
+                    publicly.
+                  </p>
+                  <p>
+                    The primary purpose of <strong>EdCyan</strong> is to
+                    provide a platform to upload informational materials and share it with others
+                    publicly. This allows other programs to build off of what has already been
+                    done and spend more time contributing new ideas to the cause.
+                  </p>
+                <h1>Project Principals</h1>
+                    <table id="Table2" cellspacing="0" cellpadding="7" width="80%"  style="color:white">
+                        <tbody>
+                            <tr>
+                                <td width="48%">
+                                    <h2 text-align="center">Aaron Zehm</h2>
+                                    <p text-align="center"><img height="130"
+                                                src=".\assets\img\zehm.jpeg" width="130" ></a></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="48%">
+                                    <h2 text-align="center">Adam Fledscher</h2>
+                                    <p text-align="center"><img height="130"
+                                                src=".\assets\img\fledscher.jpeg" width="130"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48%">
+                                    <h2 text-align="center">Chris Van</h2>
+                                    <p text-align="center"><img height="200"
+                                                src=".\assets\img\van.jpeg" width="150"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48%">
+                                    <h2 text-align="center">Kevin Wen</h2>
+                                    <p text-align="center"><img height="150"
+                                                src=".\assets\img\wen.jpeg" width="150"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48%">
+                                    <h2 text-align="center">Rahul Godaba</h2>
+                                    <p text-align="center"><img height="150"
+                                                src=".\assets\img\godaba.jpeg" width="130"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td width="48%">
+                                  <h2 text-align="center">Richard Yoon</h2>
+                                  <p text-align="center"><img height="180"
+                                              src=".\assets\img\yoon.jpeg" width="130"></p>
+                              </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
   </div>
   <div class="page d-none" id="UserManagement">
     <h1 style="text-align: center;">
