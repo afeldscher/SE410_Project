@@ -79,8 +79,8 @@
                     <a class="dropdown-item" href="#EditHome" onClick="showPage('EditHome')">Edit Home</a>
                     <a class="dropdown-item" href="#EditAbout" onClick="showPage('EditAbout')">Edit About</a>
                     <a class="dropdown-item" href="#ManageUsers" onClick="showPage('UserManagement')">Manage Users</a>
-                    <a class="dropdown-item" href="#ManageModules" onClick="showPage('ModuleManagement')">Manage
-                        Modules</a>
+                    <a class="dropdown-item" href="#ManageModules" onClick="showPage('ModuleManagement')">Manage Modules</a>
+                    <a class="dropdown-item" href="#ModerateModules" onClick="showPage('ModerateModules')">Moderate Modules</a>
                 </div>
             </li>
             <li class="nav-item nav-item-padding dropdown">
@@ -90,7 +90,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#BrowseAll" onClick="showPage('BrowseAll')">Browse All</a>
-                    <a class="dropdown-item" href="#MyModules">My Modules</a>
+                    <a class="dropdown-item" href="#MyModules" onClick="showPage('MyModules')">My Modules</a>
                     <a class="dropdown-item" href="#CreateModule">Create Module</a>
                 </div>
             </li>
@@ -420,12 +420,6 @@
                 </tr>
             </tbody>
         </table>
-        <div style="text-align: center">
-            <a href="./modulemanagementpage1">
-                < Previous Page |</a>
-                    Page 1 of 1
-                    <a href="./modulemanagementpage2">| Next Page ></a>
-        </div>
     </div>
     <div class="page d-none" id="ModuleManagement">
         <h1 style="text-align: center;">
@@ -436,10 +430,375 @@
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Title</th>
+                    <th scope="col">Version</th>
+                    <th scope="col">Date Created</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Create New Version</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">46</td>
+                    <td>
+                        <a href="./samplemodule1">Application Controls and Audit</a>
+                    </td>
+                    <td scope="row">1</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">39</td>
+                    <td>
+                        <a href="./samplemodule1">Business Continuity and Disaster Recovery</a>
+                    </td>
+                    <td scope="row">1</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Pending Moderation</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>
+                        <a href="./samplemodule1">CS 490/790</a>
+                    </td>
+                    <td scope="row">6</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>InProgress</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>
+                        <a href="./samplemodule1">Data Security</a>
+                    </td>
+                    <td scope="row">3</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Locked</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>
+                        <a href="./samplemodule1">Demo Module</a>
+                    </td>
+                    <td scope="row">1</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>
+                        <a href="./samplemodule1">Fraud</a>
+                    </td>
+                    <td scope="row">5</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>InProgress</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>
+                        <a href="./samplemodule1">HIPAA</a>
+                    </td>
+                    <td scope="row">2</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Pending Moderation</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>
+                        <a href="./samplemodule1">Incident Response</a>
+                    </td>
+                    <td scope="row">2</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>
+                        <a href="./samplemodule1">IS Audit</a>
+                    </td>
+                    <td scope="row">7</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>
+                        <a href="./samplemodule1">IT Governance</a>
+                    </td>
+                    <td scope="row">3</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>
+                        <a href="./samplemodule1">Java Week 3</a>
+                    </td>
+                    <td scope="row">5</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>
+                        <a href="./samplemodule1">Network Security</a>
+                    </td>
+                    <td scope="row">2</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Locked</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>
+                        <a href="./samplemodule1">Physical and Personnel Security</a>
+                    </td>
+                    <td scope="row">12</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Locked</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>
+                        <a href="./samplemodule1">Project and Presentation Info</a>
+                    </td>
+                    <td scope="row">1</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>
+                        <a href="./samplemodule1">Risk Management</a>
+                    </td>
+                    <td scope="row">3</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>Pending Moderation</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Create New Version</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="page d-none" id="ModerateModules">
+        <h1 style="text-align: center;">
+            Moderate Modules
+        </h1>
+        <table id="ModerateModulesTable" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="no-sort" scope="col"><input  type="checkbox"/ id="select-all"></th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Version</th>
+                    <th scope="col">Date Created</th>
+                    <th scope="col">Approve</th>
+                    <th scope="col">Deny</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row"><input type="checkbox"/></td>
+                    <td>39</td>
+                    <td>
+                        <a href="./samplemodule1">Business Continuity and Disaster Recovery</a>
+                    </td>
+                    <td>Jeremy Wilford</td>
+                    <td>1</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Approve</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Deny</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row"><input type="checkbox"/></td>
+                    <td>36</td>
+                    <td>
+                        <a href="./samplemodule1">HIPAA</a>
+                    </td>
+                    <td>Wilson Algon</td>
+                    <td>2</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Approve</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Deny</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row"><input type="checkbox"/></td>
+                    <td>38</td>
+                    <td>
+                        <a href="./samplemodule1">Risk Management</a>
+                    </td>
+                    <td>Zeke Kramer</td>
+                    <td>3</td>
+                    <td>2012-11-10 18:19:58</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Approve</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Deny</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-inline-block">
+            <button class="btn btn-primary btn-sm d-inline-block">Approve Selected</button>
+            <button class="btn btn-primary btn-sm d-inline-block">Deny Selected</button>
+        </div>
+    </div>
+    <div class="page d-none" id="MyModules">
+        <h1 style="text-align: center;">
+            My Modules
+        </h1>
+        <table id="MyModulesTable" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
                     <th scope="col">Date Created</th>
                     <th scope="col">Status</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
+                    <th scope="col">Export</th>
                 </tr>
             </thead>
             <tbody>
@@ -456,6 +815,9 @@
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
                     </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
+                    </td>
                 </tr>
                 <tr>
                     <td scope="row">39</td>
@@ -469,6 +831,9 @@
                     </td>
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
                     </td>
                 </tr>
                 <tr>
@@ -484,6 +849,9 @@
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
                     </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>40</td>
@@ -498,61 +866,8 @@
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
                     </td>
-                </tr>
-                <tr>
-                    <td>15</td>
                     <td>
-                        <a href="./samplemodule1">Demo Module</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>Active</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>35</td>
-                    <td>
-                        <a href="./samplemodule1">Fraud</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>InProgress</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>36</td>
-                    <td>
-                        <a href="./samplemodule1">HIPAA</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>PendingModeration</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>49</td>
-                    <td>
-                        <a href="./samplemodule1">Incident Response</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>Active</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
                     </td>
                 </tr>
                 <tr>
@@ -568,6 +883,9 @@
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
                     </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>44</td>
@@ -581,6 +899,9 @@
                     </td>
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
                     </td>
                 </tr>
                 <tr>
@@ -596,6 +917,9 @@
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
                     </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
+                    </td>
                 </tr>
                 <tr>
                     <td>41</td>
@@ -610,57 +934,12 @@
                     <td>
                         <button class="btn btn-primary btn-sm btn-block">Delete</button>
                     </td>
-                </tr>
-                <tr>
-                    <td>42</td>
                     <td>
-                        <a href="./samplemodule1">Physical and Personnel Security</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>Locked</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>50</td>
-                    <td>
-                        <a href="./samplemodule1">Project and Presentation Info</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>Active</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>38</td>
-                    <td>
-                        <a href="./samplemodule1">Risk Management</a>
-                    </td>
-                    <td>2012-11-10 18:19:58</td>
-                    <td>PendingModeration</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        <button class="btn btn-primary btn-sm btn-block">Export</button>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <div style="text-align: center">
-            <a href="./modulemanagementpage1">
-                < Previous Page |</a>
-                    Page 1 of 2
-                    <a href="./modulemanagementpage2">| Next Page ></a>
-        </div>
     </div>
     <div class="page d-none" id="About" style="background-color: #2E4057;">
         <h1 style="text-align: center; background-color: #F6D8AE;">
@@ -1134,5 +1413,18 @@
         $('#EditHomeTable').DataTable();
         $('#UserManagementTable').DataTable();
         $('#ModuleManagementTable').DataTable();
+        var table = $('#ModerateModulesTable').DataTable({
+            'columnDefs': [{
+            'targets': 0,
+            'searchable': false,
+            'orderable': false,
+            'className': 'dt-body-center',
+            }], "order": [[ 1, "asc" ]]
+        });
+        $('#MyModulesTable').DataTable();
+        $('#select-all').on('click', function(){
+            var rows = table.rows().nodes();
+            $('input[type="checkbox"]', rows).prop('checked', this.checked);
+        });
     });
 </script>
