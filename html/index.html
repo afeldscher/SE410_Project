@@ -91,7 +91,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#BrowseAll" onClick="showPage('BrowseAll')">Browse All</a>
                     <a class="dropdown-item" href="#MyModules" onClick="showPage('MyModules')">My Modules</a>
-                    <a class="dropdown-item" href="#CreateModule">Create Module</a>
+                    <a class="dropdown-item" href="#ModuleWizard" onClick="showPage('ModuleWizard')">Module Wizard</a>
                 </div>
             </li>
             <li class="nav-item nav-item-padding">
@@ -947,88 +947,87 @@
         </h1>
         <table id="Table1" width="750" cellspacing="1" cellpadding="1" style="color:white">
             <tbody>
-                <tr>
-                    <td width="150" valign="top">
-                    </td>
-                    <td width="600">
-                        <h1>The Network Community for Software Engineering Education</h1>
-                        <p>
-                            <strong>EdCyan - </strong> Software Engineering is taught at universities all across the
-                            world.
-                            Organizations such as ABET, Software Engineering Body of Knowledge
-                            (SWEBOK), and IEEE impose standards that help to govern software
-                            engineering curriculum; with the goal being to advance the field as a whole
-                            and improve education globally.
-                        </p>
-                        <p>
-                            One of the most important parts of education
-                            are the course materials. These can be anything from assignments, to in
-                            class exercises that are designed to improve student learning and
-                            understanding. Rather than hoarding materials and keeping them secret, a
-                            number of universities have elected to share some of their resources
-                            publicly.
-                        </p>
-                        <p>
-                            The primary purpose of <strong>EdCyan</strong> is to
-                            provide a platform to upload informational materials and share it with others
-                            publicly. This allows other programs to build off of what has already been
-                            done and spend more time contributing new ideas to the cause.
-                        </p>
-                        <h1>Project Principals</h1>
-                        <table id="Table2" cellspacing="0" cellpadding="7" width="80%" style="color:white">
-                            <tbody>
-                                <tr>
-                                    <td width="48%">
-                                        <h2 text-align="center">Aaron Zehm</h2>
-                                        <p text-align="center"><img height="130" src=".\assets\img\zehm.jpeg"
-                                                width="130"></a></p>
-                                    </td>
-                                </tr>
+            <tr>
+                <td width="150" valign="top">
+                </td>
+                <td width="600">
+                    <h1>The Network Community for Software Engineering Education</h1>
+                    <p>
+                        <strong>EdCyan - </strong> Software Engineering is taught at universities all across the
+                        world.
+                        Organizations such as ABET, Software Engineering Body of Knowledge
+                        (SWEBOK), and IEEE impose standards that help to govern software
+                        engineering curriculum; with the goal being to advance the field as a whole
+                        and improve education globally.
+                    </p>
+                    <p>
+                        One of the most important parts of education
+                        are the course materials. These can be anything from assignments, to in
+                        class exercises that are designed to improve student learning and
+                        understanding. Rather than hoarding materials and keeping them secret, a
+                        number of universities have elected to share some of their resources
+                        publicly.
+                    </p>
+                    <p>
+                        The primary purpose of <strong>EdCyan</strong> is to
+                        provide a platform to upload informational materials and share it with others
+                        publicly. This allows other programs to build off of what has already been
+                        done and spend more time contributing new ideas to the cause.
+                    </p>
+                    <h1>Project Principals</h1>
+                    <table id="Table2" cellspacing="0" cellpadding="7" width="80%" style="color:white">
+                        <tbody>
+                        <tr>
+                            <td width="48%">
+                                <h2 text-align="center">Aaron Zehm</h2>
+                                <p text-align="center"><img height="130" src=".\assets\img\zehm.jpeg"
+                                                            width="130"></a></p>
+                            </td>
+                        </tr>
 
-                                <tr>
-                                    <td width="48%">
-                                        <h2 text-align="center">Adam Fledscher</h2>
-                                        <p text-align="center"><img height="130" src=".\assets\img\fledscher.jpeg"
-                                                width="130"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="48%">
-                                        <h2 text-align="center">Chris Van</h2>
-                                        <p text-align="center"><img height="200" src=".\assets\img\van.jpeg"
-                                                width="150"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="48%">
-                                        <h2 text-align="center">Kevin Wen</h2>
-                                        <p text-align="center"><img height="150" src=".\assets\img\wen.jpeg"
-                                                width="150"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="48%">
-                                        <h2 text-align="center">Rahul Godaba</h2>
-                                        <p text-align="center"><img height="150" src=".\assets\img\godaba.jpeg"
-                                                width="130"></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="48%">
-                                        <h2 text-align="center">Richard Yoon</h2>
-                                        <p text-align="center"><img height="180" src=".\assets\img\yoon.jpeg"
-                                                width="130"></p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>&nbsp;</p>
-                    </td>
-                </tr>
+                        <tr>
+                            <td width="48%">
+                                <h2 text-align="center">Adam Fledscher</h2>
+                                <p text-align="center"><img height="130" src=".\assets\img\fledscher.jpeg"
+                                                            width="130"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="48%">
+                                <h2 text-align="center">Chris Van</h2>
+                                <p text-align="center"><img height="200" src=".\assets\img\van.jpeg"
+                                                            width="150"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="48%">
+                                <h2 text-align="center">Kevin Wen</h2>
+                                <p text-align="center"><img height="150" src=".\assets\img\wen.jpeg"
+                                                            width="150"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="48%">
+                                <h2 text-align="center">Rahul Godaba</h2>
+                                <p text-align="center"><img height="150" src=".\assets\img\godaba.jpeg"
+                                                            width="130"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="48%">
+                                <h2 text-align="center">Richard Yoon</h2>
+                                <p text-align="center"><img height="180" src=".\assets\img\yoon.jpeg"
+                                                            width="130"></p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>
-
     <div class="page d-none" id="BrowseAll">
         <div class="py-2 text-center">
             <h2>Browse All</h2>
@@ -1155,237 +1154,679 @@
             <div class="col-md-10">
                 <table id="BrowseAllTable" class="table table-striped table-bordered" id="SearchResult">
                     <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Date Created</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Edit</th>
-                            <th scope="col">Delete</th>
-                        </tr>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Date Created</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td scope="row">46</td>
-                            <td>
-                                <a href="./samplemodule1">Application Controls and Audit</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">39</td>
-                            <td>
-                                <a href="./samplemodule1">Business Continuity and Disaster Recovery</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Pending Moderation</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>34</td>
-                            <td>
-                                <a href="./samplemodule1">CS 490/790</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>InProgress</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>40</td>
-                            <td>
-                                <a href="./samplemodule1">Data Security</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Locked</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>
-                                <a href="./samplemodule1">Demo Module</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>35</td>
-                            <td>
-                                <a href="./samplemodule1">Fraud</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>InProgress</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>36</td>
-                            <td>
-                                <a href="./samplemodule1">HIPAA</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>PendingModeration</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>49</td>
-                            <td>
-                                <a href="./samplemodule1">Incident Response</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>45</td>
-                            <td>
-                                <a href="./samplemodule1">IS Audit</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>44</td>
-                            <td>
-                                <a href="./samplemodule1">IT Governance</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td>
-                                <a href="./samplemodule1">Java Week 3</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>41</td>
-                            <td>
-                                <a href="./samplemodule1">Network Security</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Locked</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>42</td>
-                            <td>
-                                <a href="./samplemodule1">Physical and Personnel Security</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Locked</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>50</td>
-                            <td>
-                                <a href="./samplemodule1">Project and Presentation Info</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>38</td>
-                            <td>
-                                <a href="./samplemodule1">Risk Management</a>
-                            </td>
-                            <td>2012-11-10 18:19:58</td>
-                            <td>PendingModeration</td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Edit</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-sm btn-block">Delete</button>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td scope="row">46</td>
+                        <td>
+                            <a href="./samplemodule1">Application Controls and Audit</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">39</td>
+                        <td>
+                            <a href="./samplemodule1">Business Continuity and Disaster Recovery</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Pending Moderation</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>
+                            <a href="./samplemodule1">CS 490/790</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>InProgress</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>
+                            <a href="./samplemodule1">Data Security</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Locked</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <a href="./samplemodule1">Demo Module</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>
+                            <a href="./samplemodule1">Fraud</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>InProgress</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>
+                            <a href="./samplemodule1">HIPAA</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>PendingModeration</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>49</td>
+                        <td>
+                            <a href="./samplemodule1">Incident Response</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>
+                            <a href="./samplemodule1">IS Audit</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>
+                            <a href="./samplemodule1">IT Governance</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <a href="./samplemodule1">Java Week 3</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>
+                            <a href="./samplemodule1">Network Security</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Locked</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>
+                            <a href="./samplemodule1">Physical and Personnel Security</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Locked</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>
+                            <a href="./samplemodule1">Project and Presentation Info</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>
+                            <a href="./samplemodule1">Risk Management</a>
+                        </td>
+                        <td>2012-11-10 18:19:58</td>
+                        <td>PendingModeration</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary btn-sm btn-block">Delete</button>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <div class="page d-none" id="ModuleWizard">
+        <div class="py-2 text-center mb-5">
+            <h1>Module Wizard</h1>
+        </div>
 
+        <div class="row mx-2">
+            <div class="col-md- p-2">
+                <ul class="list-group mb-4">
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#ModuleWizard" onClick="showPage('ModuleWizard')">Basic Info</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Materials" onClick="showPage('Materials')">Materials</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#References" onClick="showPage('References')">References</a>
+                    </div>
+                    <div  class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Misc" onClick="showPage('Misc')">Misc</a>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Submit Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Delete Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Exit</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Module Title</label>
+                        <div class="col-sm-4 mt-2">
+                            <input class="form-control ">
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Submitter</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Search user's name or Email.</label>
 
+                        <div class="col-sm-4 mt-3">
+                            <input class="form-control align-bottom">
+                        </div>
+                    </div>
+                    <hr />
 
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Description</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">A description of this module.</label>
+                        <div class="col-sm-4 input-group">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Authors</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">You may add as many authors to this module as you wish.
+                        By default, you are the only author.</label>
 
+                        <div class="col-sm-4 mt-5">
+                            <input class="form-control align-bottom">
+                            <button type="button" class="btn btn-primary btn-sm">Add Author</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Language</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">The language corresponding to the module's content.</label>
+                        <div class="col-sm-4 mt-3">
+                            <select class="custom-select">
+                                <option selected>English</option>
+                                <option value="1">Not English</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Restrictions By Group</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">This module will only be visible to the selected group.</label>
+                        <div class="col-sm-4 mt-3">
+                            <select class="custom-select">
+                                <option selected>None</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Education Level</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">The educational level that the module is targeted towards</label>
+                        <div class="col-sm-4 mt-3">
+                            <select class="custom-select">
+                                <option selected>Educated</option>
+                                <option selected>Not Educated</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Minutes</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">You may specify how long this module takes to complete
+                        in minutes. If length in minutes does not apply, please enter '0'.</label>
 
+                        <div class="col-sm-4 mt-3">
+                            <input class="form-control align-bottom" placeholder="0">
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Types</label>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary mt-2">Add Type</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Categories</label>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary mt-2">Add Category</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Topics</label>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary mt-2">Add Topic</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Objectives</label>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary mt-2">Add Objective</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Prerequisites</label>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary mt-2">Add Prerequisite</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Interactivity Type</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">The state of interaction the user can expect with the module.</label>
+                        <div class="col-sm-4 mt-3">
+                            <select class="custom-select">
+                                <option selected>Undefined</option>
+                                <option selected>Defined</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg">Rights</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">A statement describing property rights associated with
+                        this resource (e.g. copyright.).</label>
+                        <div class="col-sm-4 input-group">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="This work is licensed under a Creative License..."></textarea>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg"></label>
+                        <button type="button" class="btn btn-primary mr-2">Save Module</button>
+                        <button type="button" class="btn btn-primary mr-2">Reset</button>
+                        <button type="button" class="btn btn-primary mr-2">Create New Version</button>
+                        <button type="button" class="btn btn-primary mr-2">Create Copy</button>
+                        <button type="button" class="btn btn-primary mr-2">Export</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="page d-none" id="Materials">
+        <div class="py-2 text-center">
+            <h2>Module Wizard</h2>
+        </div>
 
+        <div class="row mx-2">
+            <div class="col-md- p-2">
+                <ul class="list-group mb-4">
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#ModuleWizard" onClick="showPage('ModuleWizard')">Basic Info</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Materials" onClick="showPage('Materials')">Materials</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#References" onClick="showPage('References')">References</a>
+                    </div>
+                    <div  class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Misc" onClick="showPage('Misc')">Misc</a>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Submit Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Delete Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Exit</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label-lg mt-2">Attach New Material</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right">Type:</label>
+                        <div class="col-sm-4 input-group">
+                            <select class="custom-select mt-2">
+                                <option selected>Upload File</option>
+                                <option value="1">Download File</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right">Name:</label>
+                        <div class="col-sm-4 input-group">
+                            <input class="form-control align-bottom">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right">Content:</label>
+                        <div class="col-sm-4 input-group">
+                            <button type="button" class="btn btn-primary btn-sm">Choose File</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right"></label>
+                        <div class="col-sm-4 input-group">
+                            <button type="button" class="btn btn-primary btn-sm">Add Material</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-5 col-form-label-lg mt-2">Attach Existing Module</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right"></label>
+                        <div class="col-sm-4 input-group">
+                            Use this form to attach an existing module to this module as a 'child'.
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right">Module:</label>
+                        <div class="col-sm-4 input-group">
+                            <select class="custom-select mt-2">
+                                <option selected>Test1 --- ID: 21</option>
+                                <option value="1">Test2 --- ID: 42</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right"></label>
+                        <div class="col-sm-4 input-group">
+                            <button type="button" class="btn btn-primary btn-sm">Attach Module</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-5 col-form-label-lg mt-2">Attach New Quick Module</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right"></label>
+                        <div class="col-sm-4 input-group">
+                            Use this form to attach a new module to this module as a 'child'.
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right">Title:</label>
+                        <div class="col-sm-4 input-group">
+                            <input class="form-control align-bottom">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label text-right">Description:</label>
+                        <div class="col-sm-4 input-group">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="page d-none" id="References">
+        <div class="py-2 text-center">
+            <h2>Module Wizard</h2>
+        </div>
+
+        <div class="row mx-2">
+            <div class="col-md- p-2">
+                <ul class="list-group mb-4">
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#ModuleWizard" onClick="showPage('ModuleWizard')">Basic Info</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Materials" onClick="showPage('Materials')">Materials</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#References" onClick="showPage('References')">References</a>
+                    </div>
+                    <div  class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Misc" onClick="showPage('Misc')">Misc</a>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Submit Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Delete Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Exit</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label-lg mt-2">Related Modules</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">If other modules in this collection relate to
+                        relate to this module, add them here, along with a brief description of the relation.</label>
+                        <div class="col-sm-3 ">
+                            <button type="button" class="btn btn-primary btn-sm mt-5">Add Material</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label-lg mt-2">External References</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">External references are references to sources outside
+                        this collection that viewers of your module may be interested in. It is recommended you provide
+                        these references in the form of a citation (for example, in APA or MLA format).</label>
+                        <div class="col-sm-3 ">
+                            <button type="button" class="btn btn-primary btn-sm mt-5">Add External Reference</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg"></label>
+                        <button type="button" class="btn btn-primary mr-2">Save References</button>
+                        <button type="button" class="btn btn-primary mr-2">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="page d-none" id="Misc">
+        <div class="py-2 text-center">
+            <h2>Module Wizard</h2>
+        </div>
+
+        <div class="row mx-2">
+            <div class="col-md- p-2">
+                <ul class="list-group mb-4">
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#ModuleWizard" onClick="showPage('ModuleWizard')">Basic Info</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Materials" onClick="showPage('Materials')">Materials</a>
+                    </div>
+                    <div class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#References" onClick="showPage('References')">References</a>
+                    </div>
+                    <div  class="list-group-item lh-condensed" style="background-color: #2E4057; color:white">
+                        <a href="#Misc" onClick="showPage('Misc')">Misc</a>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Submit Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Delete Module</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm btn-block">Exit</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label-lg mt-2">Minimum User Level To View Module</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label ">Specifies the minimum level a user must be to view your
+                        module. The lowest level is 'No Restrictions', which will allow everyone including unregistered
+                        users to view your module. Other possible values correspond to privilege levels of registered
+                        users. It is recommended you set it as low as possible to prevent unintended blocking of your
+                        module. Please note that everyone can search for and view basic information about your module.
+                        Restricting access here will prevent restricted users from viewing details about your module or
+                        the module's materials.</label>
+                        <div class="col-sm-3 ">
+                            <select class="custom-select mt-2">
+                                <option selected>Unregistered</option>
+                                <option value="1">Privileged</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label-lg mt-2">Comments</label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label ">Comments about this module. These comments are viewable
+                        by anyone who can view details about this module.</label>
+                        <div class="col-sm-4 input-group">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label-lg"></label>
+                        <button type="button" class="btn btn-primary mr-2">Save Modules</button>
+                        <button type="button" class="btn btn-primary mr-2">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
